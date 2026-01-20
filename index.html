@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="mattFunction()">
+    <header>Practice JavaScript With Me!!</header><br>
+    /*This is the first paragraph. When the mouse enters this paragraph, it will change the background color of the first and third paragraph red*/
+    <p id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Write a JavaScript function that changes the background color of the 1st paragraph when a mouse enters it. Et facilis repellat ut officia dignissimos ut sint voluptas.</p>
+    <p id="dot" ondblclick="myFunction()">Lorem ipsum dolor sit amet. Write a JavaScript function that responds to a double-click on the 2nd paragraph by displaying an alert box with the message "You double clicked the 2nd paragraph!".</p>
+    <p id="demi" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Lorem ipsum dolor sit amet. Write a JavaScript function that changes the background color of the 3rd paragraph when a mouse enters the 1st paragraph. Et facilis repellat ut officia dignissimos ut sint voluptas.</p>
+    <p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">Lorem ipsum dolor sit amet. Use another (unique) event handler attribute on the 4th paragraph. Non accusamus voluptas id maxime odio ab aspernatur velit sit cupiditate recusandae. Et facilis repellat ut officia </p>
+
+    <script>
+        function mattFunction() {
+            alert("Welcome to my page!");
+        }
+
+        function mouseEnter() {
+            document.getElementById("demo").style.backgroundColor = "red";
+            document.getElementById("demi").style.backgroundColor = "red";
+        }
+
+        function mouseLeave() {
+            document.getElementById("demo").style.backgroundColor = "white";
+            document.getElementById("demi").style.backgroundColor = "white";
+        }
+
+        function myFunction() {
+            alert("You double clicked the 2nd paragraph!");
+        }
+
+        function mouseDown() {
+            document.getElementById("p1").style.color = "red";
+        }
+
+        function mouseUp() {
+            document.getElementById("p1").style.color = "green";
+        }
+    </script>
+</body>
+</html>
